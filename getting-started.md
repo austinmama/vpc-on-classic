@@ -48,7 +48,7 @@ To get started with {{site.data.keyword.vpc_full}} (Gen 1 compute):
 
    * Or Generate an SSH Key: If you do not have a public SSH key or if you forgot the password of an existing one, generate a new one by running the `ssh-keygen -t rsa -C "user_ID"` command (on Linux or macOS servers) and following the prompts. That command generates two files. The generated public key is in the `<your key>.pub` file. For Windows operating systems, you can use a tool like PuTTYgen to generate an SSH key.
 
-## Use the UI, CLI, or REST API
+## Using the UI, CLI, or REST API
 
 You can provision and manage all of your VPC resources through the UI, CLI, or REST API.
 
