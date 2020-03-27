@@ -61,7 +61,7 @@ If you plan to create a load balancer and use HTTPs for the listener, an SSL cer
 
 To create a VPC and subnet:
 
-1. Open [{{site.data.keyword.cloud_notm}} console](https://{DomainName}){: external}
+1. Open the [{{site.data.keyword.cloud_notm}} console](https://{DomainName}){: external}.
 1. Click **Menu icon ![Menu icon](../../icons/icon_hamburger.svg) > VPC Infrastructure > Network > VPCs** and click **New virtual private cloud**.
 1. Enter a name for the VPC, such as `my-vpc`.
 1. Select a resource group for the VPC and all its attached resources. Resource groups enable you to organize your account resources for access control and billing purposes. For more information, see [Best practices for organizing resources in a resource group](/docs/resources?topic=resources-bp_resourcegroups).
