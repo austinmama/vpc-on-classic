@@ -3,7 +3,7 @@
 copyright:
   years: 2017, 2020
 
-lastupdated: "2020-04-02"
+lastupdated: "2020-04-15"
 
 keywords: vpc, resource, access, role, role-based, authorization, policy, access group, resource group, permission, assign, administrator, operator, editor, viewer, user, team, scenario, manage, create, IAM
 
@@ -48,17 +48,16 @@ This scenario covers the basic steps needed to set up an individual user. We wil
 ### Inviting a new user to create or manage infrastructure service resources
 {: #inviting-a-new-user-to-create-or-manage-vpc-resources}
 
-Invite an IBM Cloud user to your account and give them access to `Infrastructure Service` so that they can view, create, and update all VPC resources in the Default resource group.
+Invite an IBM Cloud user to your account so that they can view, create, and update VPC resources.
 
 1. Go to the [IAM Users](https://cloud.ibm.com/iam/users){: external} page in the IBM Cloud console and click **Invite users**.
-2. In the **Users** section of the Invite users page, enter the email addresses of the users that you want to invite in the **Email address** field.
-3. In the **Assign users additional access** section, select **IAM services** and complete the following tasks:
-  * From the **Enter or select a service** list, select **Infrastructure Service**.
-  * From the **Enter or select a resource group** list, select the Default resource group.
-  * From the **Resource type** list, select **All resource types**.
-  * In the **Platform access** area, select **Editor**.
-  * In the **Resource group access** area, select **Viewer**.
-  * Scroll to the end of the page and click **Add**.
+2. In the **Enter Email addressess** field, enter the email addresses of the users that you want to invite.
+3. In the **Assign users additional access** section, select **IAM services** and complete the following information:
+   * From the **What type of access do you want to assign?** list, select a specific service that you want to assign the users, or select **All Identity and Access enabled services** for all IAM-enabled services.
+   * In the adjacent **in** field, select where you want this access granted. For example, select **Account**.
+   * In the **Regions** list, select a specific region to grant access, or keep **All regions** (default).
+   * In the **Platform access** and **Service access** areas, select to apply one or more access levels.   
+4. Scroll to the end of the page and click **Add**.
 
 If you want to give the user permissions to create their own resource groups, learn about [Creating and managing resource groups](/docs/resources?topic=resources-rgs#create_rgs).
 
@@ -71,12 +70,12 @@ This scenario covers the basic steps needed to give an existing user in your acc
 2. Select the user whose authorization you're enabling.
 3. Under the **Access policies** tab, select **Assign access**.
 4. Select **Assign users additional access**.
-  * In the **Resource group** list, select **All resource groups** or the specific resource group you want to grant access to the user.
-  * In the **Assign users additional access** list, select at least **Viewer** to allow the user to create new resources in the resource group. It can be set to **No access** if you do not want to allow the user to create new resources.
-  * In the **Services** list, select **Infrastructure Service**.
-  * In the **Resource type** list, select **All resource types** to give the user access to all [VPC resource types](/docs/vpc-on-classic?topic=vpc-on-classic-about-vpc-infrastructure-resources). Optionally, you can select individual resource types to grant specific resource permissions.
-  * In the **Select roles** section, select the platform access role that you want to assign to the user. It can be **Administrator**, **Editor**, **Operator**, or **Viewer**, depending on the role you would like to assign the users. See [Roles required to manage VPC resources](/docs/vpc-on-classic?topic=vpc-on-classic-resource-authorizations-required-for-api-and-cli-calls) to determine which permissions are needed. **Editor** role gives a user the power to create, update, and delete resources.
-  * Click **Assign**.
+5. In the **Assign users additional access** section, select **IAM services** and complete the following information:
+   * From the **What type of access do you want to assign?** list, select **All Identity and Access enabled services** for all IAM-enabled services.
+   * In the adjacent **in** field, select **All resource groups**.
+   * In the **Platform access** select at least **Viewer** to allow the user to create new resources in a resource group. It can be set to **No access** if you do not want to allow the user to create new resources. See [Roles required to manage VPC resources](/docs/vpc-on-classic?topic=vpc-on-classic-resource-authorizations-required-for-api-and-cli-calls) to determine which permissions are needed.
+   * In the **Service access** area, select **All resource types** to give the user access to all [VPC resource types](/docs/vpc-on-classic?topic=vpc-on-classic-about-vpc-infrastructure-resources). 
+6. Scroll to the end of the page and click **Add**.
 
 ## Team access scenario
 {: #team-access-scenario}
