@@ -44,7 +44,7 @@ This section lists more details of unsupported features and use cases, categoriz
 * {{site.data.keyword.vpc_short}} does not support multicast or broadcast domains.
 * {{site.data.keyword.vpc_short}} does not provide end-to-end encryption.
 * A VPC cannot be peered with other VPCs natively. It is possible to connect VPCs using VPN gateways, floating IPs, or {{site.data.keyword.tg_full_notm}}.
-    - With both VPN gateways and floating IPs, there is no automatic route advertisement between the two VPCs. Static routes must be used in each VPC to enable Layer-3 connectivity between the two VPCs. See [Using VPN with your VPC](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc#vpn-example) for how to achieve VPC-to-VPC connectivity using this method.
+    - With both VPN gateways and floating IPs, there is no automatic route advertisement between the two VPCs. Static routes must be used in each VPC to enable Layer-3 connectivity between the two VPCs. See [Using VPN with your VPC](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc) for how to achieve VPC-to-VPC connectivity using this method.
     - With {{site.data.keyword.tg_full_notm}}, it advertises the root subnets of each VPC, allowing traffic to be routed without the use of static routes. For more information, see [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started).
 * Cloud Service Endpoints are not supported by VPC. See [Service endpoints available for IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-service-endpoints-available-for-ibm-cloud-vpc) for services that are available.
 
